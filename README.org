@@ -1,1 +1,25 @@
 * SLURM Cheatsheet
+
+** Submit a job
+   #+begin_src sh
+   sbatch job.slurm
+   #+end_src
+
+
+** Check the status of queued and running jobs
+   #+begin_src sh
+   squeue -u $USER
+   #+end_src
+
+
+** See the expected start times of your queued jobs
+   #+begin_src sh
+   squeue -u $USER --start
+   #+end_src
+
+** Cancel a job 
+   #+begin_src sh
+   scancel <jobid>
+   #+end_src
+
+
